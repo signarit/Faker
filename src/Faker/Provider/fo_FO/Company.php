@@ -13,17 +13,19 @@ class Company extends \Faker\Provider\Company
         '{{lastName}} {{companySuffix}}',
         '{{firstname}} {{lastName}} {{companySuffix}}',
         '{{lastName}} og {{lastName}} {{companySuffix}}',
-        '{{lastName}} & {{lastName}} {{companySuffix}}'
+        '{{lastName}} & {{lastName}} {{companySuffix}}',
     ];
 
     /**
      * @var array Company suffixes.
+     *
      * @see https://www.taks.fo/en/business/vinnuskrain/different-kinds-of-businesses
      */
     protected static $companySuffix = ['Sp/f', 'P/F', 'ÍVF', 'Fa.'];
 
     /**
      * @var string v-tal number format.
+     *
      * @see https://www.taks.fo/en/business/vinnuskrain/about-vinnuskrain/
      */
     protected static $vtalFormat = '######';

@@ -50,7 +50,7 @@ class Address extends \Faker\Provider\Address
         '650', '655', '656', '660', '665', '666', '690', '695', '700', '725', '726', '727', '730',
         '735', '736', '737', '740', '750', '765', '766', '767', '780', '785', '795', '796', '797',
         '798', '800', '825', '826', '827', '850', '860', '870', '900', '925', '926', '927', '928',
-        '950', '960', '970'
+        '950', '960', '970',
     ];
 
     /**
@@ -92,13 +92,13 @@ class Address extends \Faker\Provider\Address
     ];
 
     protected static $citySuffix = [
-        'fjørður', 'vík', 'eiði', 'nes', 'dalur'
+        'fjørður', 'vík', 'eiði', 'nes', 'dalur',
     ];
 
     protected static $buildingNumber = ['#', '#', '#%', '##'];
 
     protected static $streetSuffix = [
-        'gøta', 'vegur'
+        'gøta', 'vegur',
     ];
 
     /**
@@ -107,7 +107,7 @@ class Address extends \Faker\Provider\Address
      * @see https://fo.wikipedia.org/wiki/Oyggjar_%C3%AD_F%C3%B8royum
      */
     protected static $county = [
-        'Streymoy', 'Eysturoy', 'Vágar', 'Suðuroy', 'Sandoy', 'Borðoy', 'Viðoy', 'Kunoy', 'Kalsoy', 'Svínoy', 'Fugloy', 'Nólsoy', 'Mykines', 'Skúvoy', 'Hestur', 'Stóra Dímun', 'Koltur', 'Lítla Dímun'
+        'Streymoy', 'Eysturoy', 'Vágar', 'Suðuroy', 'Sandoy', 'Borðoy', 'Viðoy', 'Kunoy', 'Kalsoy', 'Svínoy', 'Fugloy', 'Nólsoy', 'Mykines', 'Skúvoy', 'Hestur', 'Stóra Dímun', 'Koltur', 'Lítla Dímun',
     ];
 
     protected static $country = [
@@ -228,9 +228,6 @@ class Address extends \Faker\Provider\Address
         return static::municipality();
     }
 
-    /**
-     *
-     */
     public static function municipality()
     {
         return static::randomElement(static::$municipality);

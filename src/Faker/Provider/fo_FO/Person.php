@@ -13,15 +13,16 @@ class Person extends \Faker\Provider\Person
      * @var array Faroese person name formats.
      */
     protected static $maleNameFormats = [
-        '{{firstNameMale}} {{lastName}}'
+        '{{firstNameMale}} {{lastName}}',
     ];
 
     protected static $femaleNameFormats = [
-        '{{firstNameFemale}} {{lastName}}'
+        '{{firstNameFemale}} {{lastName}}',
     ];
 
     /**
      * @var array Faroese first names.
+     *
      * @see https://hagstova.fo/fo/folk/folkatal/novn
      */
     protected static $firstNameMale = [
@@ -44,7 +45,7 @@ class Person extends \Faker\Provider\Person
         'Ragnar', 'Rani', 'Rasmus', 'Regin', 'Rógvi', 'Rói', 'Rókur', 'Rúni',
         'Sámal', 'Signar', 'Silas', 'Símun', 'Sjúrður',
         'Teitur', 'Tóki',
-        'Torkil', 'Tróndur', 'Tummas', 'Uni'
+        'Torkil', 'Tróndur', 'Tummas', 'Uni',
     ];
 
     protected static $firstNameFemale = [
@@ -73,6 +74,7 @@ class Person extends \Faker\Provider\Person
 
     /**
      * @var array Faroese last names.
+     *
      * @see https://hagstova.fo/fo/folk/folkatal/novn
      */
     protected static $lastName = [
@@ -95,7 +97,7 @@ class Person extends \Faker\Provider\Person
         'Thomassen', 'Thomsen',
         'Vang',
         'Weihe',
-        'Zachariasen'
+        'Zachariasen',
     ];
 
     protected static $titleMale = ['Harra'];

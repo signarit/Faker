@@ -31,11 +31,11 @@ final class PhoneNumberTest extends TestCase
             self::assertMatchesRegularExpression('/^\+298\d{1,9}$/', $number);
 
             self::assertThat(
-                intval($firstDigits),
+                (int) $firstDigits,
                 self::logicalAnd(
                     self::greaterThanOrEqual(210),
-                    self::lessThanOrEqual(290)
-                )
+                    self::lessThanOrEqual(290),
+                ),
             );
         }
     }

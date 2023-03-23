@@ -39,7 +39,7 @@ final class AddressTest extends TestCase
     public function testCounty()
     {
         $county = [
-            'Streymoy', 'Eysturoy', 'Vágar', 'Suðuroy', 'Sandoy', 'Borðoy', 'Viðoy', 'Kunoy', 'Kalsoy', 'Svínoy', 'Fugloy', 'Nólsoy', 'Mykines', 'Skúvoy', 'Hestur', 'Stóra Dímun', 'Koltur', 'Lítla Dímun'
+            'Streymoy', 'Eysturoy', 'Vágar', 'Suðuroy', 'Sandoy', 'Borðoy', 'Viðoy', 'Kunoy', 'Kalsoy', 'Svínoy', 'Fugloy', 'Nólsoy', 'Mykines', 'Skúvoy', 'Hestur', 'Stóra Dímun', 'Koltur', 'Lítla Dímun',
         ];
 
         self::assertContains($this->faker->county, $county);
@@ -54,8 +54,8 @@ final class AddressTest extends TestCase
             $this->faker->latitude,
             self::logicalAnd(
                 self::greaterThanOrEqual($latitudeMin),
-                self::lessThanOrEqual($latitudeMax)
-            )
+                self::lessThanOrEqual($latitudeMax),
+            ),
         );
     }
 
@@ -68,8 +68,8 @@ final class AddressTest extends TestCase
             $this->faker->longitude,
             self::logicalAnd(
                 self::greaterThanOrEqual($longitudeMin),
-                self::lessThanOrEqual($longitudeMax)
-            )
+                self::lessThanOrEqual($longitudeMax),
+            ),
         );
     }
 

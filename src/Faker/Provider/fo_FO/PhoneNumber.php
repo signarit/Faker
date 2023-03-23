@@ -17,7 +17,7 @@ class PhoneNumber extends \Faker\Provider\PhoneNumber
         '+298 ### ###',
         '+298######',
         '######',
-        '### ###'
+        '### ###',
     ];
 
     /**
@@ -37,19 +37,25 @@ class PhoneNumber extends \Faker\Provider\PhoneNumber
         switch (static::randomElement(static::$formats)) {
             case '+298 ######':
                 $formattedPhoneNumber = static::$countryCode . ' ' . $firstDigits . $lastDigits;
+
                 break;
             case '+298 ### ###':
                 $formattedPhoneNumber = static::$countryCode . ' ' . $firstDigits . ' ' . $lastDigits;
+
                 break;
             case '+298######':
                 $formattedPhoneNumber = static::$countryCode . $firstDigits . $lastDigits;
+
                 break;
             case '######':
                 $formattedPhoneNumber = $firstDigits . $lastDigits;
+
                 break;
             case '### ###':
                 $formattedPhoneNumber = $firstDigits . ' ' . $lastDigits;
+
                 break;
+
             default:
                 $formattedPhoneNumber = static::$countryCode . ' ' . $firstDigits . $lastDigits;
         }

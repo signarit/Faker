@@ -23,8 +23,8 @@ final class CompanyTest extends TestCase
             $this->faker->vtal,
             self::logicalAnd(
                 self::greaterThanOrEqual(100000),
-                self::lessThanOrEqual(999999)
-            )
+                self::lessThanOrEqual(999999),
+            ),
         );
     }
 

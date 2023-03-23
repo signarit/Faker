@@ -46,7 +46,7 @@ final class PersonTest extends TestCase
             'Ragnar', 'Rani', 'Rasmus', 'Regin', 'Rógvi', 'Rói', 'Rókur', 'Rúni',
             'Sámal', 'Signar', 'Silas', 'Símun', 'Sjúrður',
             'Teitur', 'Tóki',
-            'Torkil', 'Tróndur', 'Tummas', 'Uni'
+            'Torkil', 'Tróndur', 'Tummas', 'Uni',
         ];
 
         self::assertContains($this->faker->firstName('male'), $firstNameMale);
